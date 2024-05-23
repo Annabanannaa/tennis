@@ -2,7 +2,8 @@
 import { computed, reactive } from "vue";
 import {
   Form,
-  FormItem
+  FormItem,
+  Input,
 } from "ant-design-vue";
 
 interface FormState {
@@ -28,7 +29,7 @@ const onFinishFailed = (errorInfo: any) => {
 
 <template>
   <Form
-      class="bg-red"
+      class="border p-4 px-auto"
       :model="formState"
       name="basic"
       :label-col="{ span: 8 }"

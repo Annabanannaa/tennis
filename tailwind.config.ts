@@ -3,16 +3,17 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
-        './components/**/*.{html,js,ts,vue}',
-        './pages/**/*.{html,js,ts,vue}',
-        './layouts/**/*.{html,js,ts,vue}'
+        './src/components/**/*.{html,js,ts,vue}',
+        './src/views/pages/**/*.{html,js,ts,vue}',
+        './src/*.{js,vue}'
     ],
     theme: {
         extend: {
             colors: {
                 red: {
+                    DEFAULT: '#ED5151',
                     500: '#ED5151',
-                    200: '#FFE7E7'
+                    200: '#FFE7E7',
                 },
                 black: {
                     DEFAULT: '#171718',
