@@ -1,0 +1,43 @@
+/*
+    Эти стили будут подключаться на всех страницах.
+    Тут должны быть только базовые стили. Если нужно описать стили Vue компонента, то делаем это внутри .vue файла
+*/
+
+/* Сначала выводятся все слои tailwind, потом уже другое */
+@import "./tailwind.css";
+
+
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    padding: 0 2rem;
+  }
+}
